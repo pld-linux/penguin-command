@@ -2,14 +2,14 @@ Summary:	A missile command clone
 Summary(pl):	Klon missile command
 Name:		penguin-command
 Version:	1.5.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
 Group(pl):	X11/Aplikacje/Gry
 Source0:	http://www.linux-games.com/%{name}/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
-Icon:		penguin-command.xpm
+Source2:	%{name}.png
 URL:		http://www.linux-games.com/
 BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	SDL_mixer-devel
@@ -41,8 +41,8 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Games}
 
 %{__make} install DESTDIR="$RPM_BUILD_ROOT"
-install data/gfx/icon.png $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
 
 gzip -9nf NEWS README AUTHORS
 
