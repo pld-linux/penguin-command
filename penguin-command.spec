@@ -1,8 +1,8 @@
 Summary:	A missile command clone
 Summary(pl):	Klon missile command
 Name:		penguin-command
-Version:	1.5.1
-Release:	2
+Version:	1.6.0
+Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
@@ -53,6 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
+%{_mandir}/man6/*
 %{_datadir}/%{name}
 %{_pixmapsdir}/*
 %{_applnkdir}/Games/*
