@@ -34,8 +34,8 @@ i muzykê. Musisz obroniæ miasta strzelaj±c pociskami i bombami.
 %build
 rm -f missing
 aclocal
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
