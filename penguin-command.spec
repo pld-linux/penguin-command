@@ -2,7 +2,7 @@ Summary:	A missile command clone
 Summary(pl):	Klon missile command
 Name:		penguin-command
 Version:	1.6.6
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
@@ -16,7 +16,6 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libpng-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 This is a clone of the classic "Missile Command" Game, but it has
@@ -40,12 +39,12 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Games}
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
 
 
@@ -59,4 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man6/*
 %{_datadir}/%{name}
 %{_pixmapsdir}/*
-%{_applnkdir}/Games/*
+%{_desktopdir}/*
