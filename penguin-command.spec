@@ -33,7 +33,7 @@ i muzykê. Musisz obroniæ miasta strzelaj±c pociskami i bombami.
 
 %build
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
