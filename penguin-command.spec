@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://www.linux-games.com/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	7fc1387874a64256c246e9cdf6ee802b
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://www.linux-games.com/
