@@ -5,7 +5,7 @@ Version:	1.6.6
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	8f32e88894464a195488e6dccb6a334f
 Source1:	%{name}.desktop
 Source2:	%{name}.png
