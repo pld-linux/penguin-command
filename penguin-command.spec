@@ -1,7 +1,7 @@
 Summary:	A missile command clone
 Summary(pl):	Klon missile command
 Name:		penguin-command
-Version:	1.6.0
+Version:	1.6.1
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
@@ -24,7 +24,6 @@ This is a clone of the classic "Missile Command" Game, but it has
 better graphics and music. You have to defend cities by shooting at
 missiles and smartbombs.
 
-
 %description -l pl
 To jest klon klasycznej gry "Missile Command", lecz ma lepsz± grafikê
 i muzykê. Musisz obroniæ miasta strzelaj±c pociskami i bombami.
@@ -38,11 +37,13 @@ i muzykê. Musisz obroniæ miasta strzelaj±c pociskami i bombami.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Games}
+%{__install} -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Games}
 
-%{__make} install DESTDIR="$RPM_BUILD_ROOT"
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
-install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+
+%{__install} %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
+%{__install} %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
 
 gzip -9nf NEWS README AUTHORS
 
