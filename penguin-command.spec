@@ -41,13 +41,13 @@ automake -a -c -f
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__install} -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Games}
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Games}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%{__install} %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
-%{__install} %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
 
 gzip -9nf NEWS README AUTHORS
 
