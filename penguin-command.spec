@@ -1,12 +1,12 @@
 Summary:	A missile command clone
 Summary(pl):	Klon missile command
 Name:		penguin-command
-Version:	1.6.2
+Version:	1.6.6
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://www.linux-games.com/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	7fc1387874a64256c246e9cdf6ee802b
+Source0:	http://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	8f32e88894464a195488e6dccb6a334f
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://www.linux-games.com/
