@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Penguin Command
 Comment=A missile command clone
-Comment[pl]=A missile command clone
+Comment[pl]=Klon gry missile command
 Exec=penguin-command
 Terminal=0
 Type=Application
