@@ -6,3 +6,4 @@ Exec=penguin-command
 Terminal=0
 Type=Application
 Icon=penguin-command.png
+# vi: encoding=utf-8
