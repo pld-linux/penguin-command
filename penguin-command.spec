@@ -3,18 +3,18 @@ Summary(pl):	Klon missile command
 Name:		penguin-command
 Version:	1.5.0
 Release:	1
+License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
 Group(pl):	X11/Aplikacje/Gry
 Source0:	http://www.linux-games.com/%{name}/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
-Icon:		%{name}.xpm
-URL:		http://www.linux-games.com
-License:	GPL
+Icon:		penguin-command.xpm
+URL:		http://www.linux-games.com/
+BuildRequires:	SDL-devel >= 1.2.0
+BuildRequires:	SDL_mixer-devel
 BuildRequires:	zlib-devel
 BuildRequires:	libpng-devel
-BuildRequires:	SDL-devel
-BuildRequires:	SDL_mixer-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
