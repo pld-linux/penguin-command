@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Penguin Command
+Comment=A missile command clone
+Comment[pl]=A missile command clone
+Exec=penguin-command
+Terminal=0
+Type=Application
+Icon=penguin-command.png
