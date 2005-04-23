@@ -5,7 +5,7 @@ Version:	1.6.9
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Games
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/penguin-command/%{name}-%{version}.tar.gz
 # Source0-md5:	2280971eb5cf3a1e26446e30d3f04ecb
 Source1:	%{name}.desktop
 Source2:	%{name}.png
