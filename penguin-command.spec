@@ -59,4 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man6/*
 %{_datadir}/%{name}
 %{_pixmapsdir}/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
