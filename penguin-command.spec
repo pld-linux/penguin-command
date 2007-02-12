@@ -1,5 +1,5 @@
 Summary:	A missile command clone
-Summary(pl):	Klon missile command
+Summary(pl.UTF-8):   Klon missile command
 Name:		penguin-command
 Version:	1.6.10
 Release:	1
@@ -23,9 +23,9 @@ This is a clone of the classic "Missile Command" Game, but it has
 better graphics and music. You have to defend cities by shooting at
 missiles and smartbombs.
 
-%description -l pl
-To jest klon klasycznej gry "Missile Command", lecz ma lepsz± grafikê
-i muzykê. Musisz obroniæ miasta strzelaj±c pociskami i bombami.
+%description -l pl.UTF-8
+To jest klon klasycznej gry "Missile Command", lecz ma lepszÄ… grafikÄ™
+i muzykÄ™. Musisz obroniÄ‡ miasta strzelajÄ…c pociskami i bombami.
 
 %prep
 %setup -q
