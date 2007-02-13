@@ -1,5 +1,5 @@
 Summary:	A missile command clone
-Summary(pl.UTF-8):   Klon missile command
+Summary(pl.UTF-8):	Klon missile command
 Name:		penguin-command
 Version:	1.6.10
 Release:	1
